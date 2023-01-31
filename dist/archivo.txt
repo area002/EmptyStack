@@ -1,0 +1,6 @@
+hola
+if
+do
+do while
+1=5
+5,3
