@@ -149,11 +149,11 @@ public class IDE extends javax.swing.JFrame {
        
        try {
           s.parse();
-          jtaCompile.setText("El analisis sictactico correcto");
+          jtaCompile.setText("No hay errores Semantico");
           jtaCompile.setForeground(Color.green);
        } catch (Exception e) {
            Symbol sym =s.getS();
-           jtaCompile.setText("Eror de sintaxis: Linea:"+(sym.right+1)+" exepcion: *"+sym.value+"*");
+           jtaCompile.setText("Eror Semantico detectado: Linea:"+(sym.right+1)+" exepcion: *"+sym.value+"*");
           jtaCompile.setForeground(Color.RED);
            
        }
